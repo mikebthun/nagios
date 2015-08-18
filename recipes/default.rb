@@ -194,7 +194,7 @@ nagios_conf 'servicegroups'
 nagios_conf 'servicedependencies'
 
 zap_directory node['nagios']['config_dir'] do
-  pattern '*.cfg'
+  pattern 'pagerduty.cfg'
 end
 
 service 'nagios' do
